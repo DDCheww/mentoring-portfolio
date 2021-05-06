@@ -136,6 +136,10 @@ div.navigation img {
     box-shadow: 2px 1px 5px 0px #AAAAAA;
 }
 
+#book1 .page .text{
+    height: 120px;
+}
+
 #book1 .wrapper {
     max-width: 900px;
 }
@@ -150,6 +154,22 @@ div.navigation img {
     width: inherit;
     height: inherit;
     border-radius: 70%;
+}
+
+/* 가운데 정렬 안 되는 이유를 못 찾음...*/
+#book1 .arrow {
+    display: flex;
+    flex-direction: row;
+}
+
+#book1 .arrow img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+#book1 .arrow img#left-arrow{
+    transform: scaleX(-1);
 }
 
 /* ========== book2 ========== */
