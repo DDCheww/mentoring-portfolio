@@ -13,58 +13,67 @@
 
 <body>
   <div class="navigation">
-    <button>버튼1</button>
-    <button>버튼2</button>
-    <button>버튼3</button>
+    <img src="img/icon.svg" alt="icon">
+    <button>INSTAGRAM</button>
+    <button>GITHUB</button>
+    <button>BLOG</button>
   </div>
 
   <div class="card" id="book1">
-    <div class="profile_pic" width="50%">
-      <img src="img/temp.jpg" alt="profile_pic" width="300px">
-    </div>
-    <div class="contents" width="50%">
-      <div class="title">
-        <h1>황소영</h1>
+    <div class="wrapper">
+      <div class="profile_pic">
+        <img src="img/profile.jpg" alt="profile_pic" width="400px">
       </div>
-      <div class="maintext">
-        안녕하세요 황소영입니다!
+      <div class="contents">
+        <div class="title">
+          <h1>황소영</h1>
+        </div>
+        <div class="maintext">
+          <p>안녕하세요 황소영입니다!</p>
+        </div>
       </div>
     </div>
   </div>
 
 
   <div class="card" id="book2">
-    <div class="title">
-      Title
-    </div>
-    <div class="card_container">
-      <div class="card_history">
-        <img src="img/temp.jpg" alt="history_pic" width="50px">
-
+    <div class="wrapper">
+      <div class="title">
+        <h1>Title</h1>
       </div>
-      <div class="card_history">
-        <img src="img/temp.jpg" alt="history_pic" width="50px">
+      <div class="card-container">
+        <div class="card-history">
+          <img src="img/temp.jpg" alt="history_pic">
+          <div class="maintext">Description</div>
+          <button>자세히 보기</button>
+        </div>
+        <div class="card-history">
+          <img src="img/temp.jpg" alt="history_pic">
+          <div class="maintext">Description</div>
+          <button>자세히 보기</button>
+        </div>
+        <div class="card-history">
+          <img src="img/temp.jpg" alt="history_pic">
+          <div class="maintext">Description</div>
+          <button>자세히 보기</button>
+        </div>
       </div>
-      <div class="card_history">
-        <img src="img/temp.jpg" alt="history_pic" width="50px">
-      </div>
-    </div>
-    <div>
-      <p>bottom</p>
-    </div>
+  </div>
   </div>
 
 
   <div class="card" id="book3">
-    <div class="article-container">
-      <div class="article">
-        <div class="article-img-container">
-          <img src="img/temp.jpg" alt="article_pic" width="50px">
-        </div>
-        <div class="article-desc-contatiner">
-          <div>Title</div>
-          <div>Description</div>
-          <div><button>자세히 보기</button></div>
+    <div class="wrapper">
+      <div class="article-container">
+        <div class="article">
+          <div class="article-img-container">
+            <img src="img/temp.jpg" alt="article_pic">
+          </div>
+          <div class="article-desc-container">
+            <div><h2>Title</h2></div>
+            <div class="maintext">Description</div>
+            <button>자세히 보기</button>
+          </div>
         </div>
       </div>
     </div>
@@ -72,21 +81,23 @@
 
 
   <div class="card" id="book4">
-    <div class="move-pointer" id="to-left">◀</div>
-    <div class="diary">
-      <div class="diary-pic">
-        <img src="img/temp.jpg" alt="diary_pic" width="300px">
-      </div>
-      <div class="diary-text">
-        <div class="title">
-          title
+    <div class="wrapper">
+      <div class="move-pointer" id="to-left">◀</div>
+      <div class="diary">
+        <div class="diary-pic">
+          <img src="img/temp.jpg" alt="diary_pic" width="300px">
         </div>
-        <div class="contents">
-          contents
+        <div class="diary-text">
+          <div class="title">
+            title
+          </div>
+          <div class="contents">
+            contents
+          </div>
         </div>
       </div>
+      <div class="move-pointer" id="to-right">▶</div>
     </div>
-    <div class="move-pointer" id="to-right">▶</div>
   </div>
 
 </body>
