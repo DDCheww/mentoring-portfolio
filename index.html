@@ -8,6 +8,9 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
   <title>Username's Portfolio</title>
 </head>
 
@@ -25,11 +28,17 @@
         <img src="img/profile.jpg" alt="profile_pic" width="400px">
       </div>
       <div class="contents">
-        <div class="title">
-          <h1>황소영</h1>
-        </div>
-        <div class="maintext">
-          <p>안녕하세요 황소영입니다!</p>
+        <h1>황소영</h1>
+        <p>안녕하세요 황소영입니다!</p>
+        <p>내용은 두줄까지 입력하는게 제일 깔끔</p>
+        <div class="page">
+          <div class="text">
+            <p id="book1_desc">Description1</p>
+          </div>
+          <div class="arrow">
+            <img src="img/next.svg" alt="left-arrow" id="left-arrow">
+            <img src="img/next.svg" alt="right-arrow" id='right-arrow'>
+          </div>
         </div>
       </div>
     </div>
@@ -41,37 +50,56 @@
       <div class="title">
         <h1>Title</h1>
       </div>
+      
       <div class="card-container">
         <div class="card-history">
           <img src="img/temp.jpg" alt="history_pic">
-          <div class="maintext">Description</div>
-          <button>자세히 보기</button>
+          <div class="text-box">
+            <h2>title</h2>
+            <p>Description</p>
+          </div>
+          <button id="modal-button" value="history1">자세히 보기</button>
         </div>
+
         <div class="card-history">
           <img src="img/temp.jpg" alt="history_pic">
-          <div class="maintext">Description</div>
-          <button>자세히 보기</button>
+          <div class="text-box">
+            <h2>title</h2>
+            <p>Description</p>
+          </div>
+          <button id="modal-button" value="history2">자세히 보기</button>
         </div>
+
         <div class="card-history">
           <img src="img/temp.jpg" alt="history_pic">
-          <div class="maintext">Description</div>
-          <button>자세히 보기</button>
+          <div class="text-box">
+            <h2>title</h2>
+            <p>Description</p>
+          </div>
+          <button id="modal-button" value="history3">자세히 보기</button>
         </div>
+
       </div>
-  </div>
+    </div>
   </div>
 
+  <div id="modal"></div>
 
   <div class="card" id="book3">
     <div class="wrapper">
+      <div class="title">
+        <h1>Title</h1>
+      </div>
       <div class="article-container">
         <div class="article">
           <div class="article-img-container">
             <img src="img/temp.jpg" alt="article_pic">
           </div>
           <div class="article-desc-container">
-            <div><h2>Title</h2></div>
-            <div class="maintext">Description</div>
+            <div class="text-box">
+              <h2>title</h2>
+              <p>Description</p>
+            </div>
             <button>자세히 보기</button>
           </div>
         </div>
@@ -82,21 +110,26 @@
 
   <div class="card" id="book4">
     <div class="wrapper">
-      <div class="move-pointer" id="to-left">◀</div>
-      <div class="diary">
-        <div class="diary-pic">
-          <img src="img/temp.jpg" alt="diary_pic" width="300px">
+      <div class="title">
+        <h1>Title</h1>
+      </div>
+      <div class="content">
+        <div class="move-pointer" id="to-left">
+          <img src="img/next.svg" alt="◀">
         </div>
-        <div class="diary-text">
-          <div class="title">
-            title
+        <div class="diary">
+          <div class="diary-pic">
+            <img src="img/temp.jpg" alt="diary_pic">
           </div>
-          <div class="contents">
-            contents
+          <div class="diary-text">
+            <h2>Title</h2>
+            <p>contents</p>
           </div>
+        </div>
+        <div class="move-pointer" id="to-right">
+          <img src="img/next.svg" alt="▶">
         </div>
       </div>
-      <div class="move-pointer" id="to-right">▶</div>
     </div>
   </div>
 
