@@ -180,7 +180,7 @@ div.navigation img {
 #book2 .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 div.card-container {
@@ -196,8 +196,8 @@ div.card-history {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 5px 0px #AAAAAA;
     margin: 10px;
-    text-align: center;
-    align-content: center;
+    /* text-align: center; */
+    /* align-content: center; */
     height: fit-content;
     display: flex;
     flex-direction: column;
