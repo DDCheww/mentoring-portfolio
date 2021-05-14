@@ -173,6 +173,7 @@ div.navigation img {
 }
 
 /* ========== book2 ========== */
+
 #book2 {
     background-color: #ADD5F7;
 }
@@ -196,8 +197,6 @@ div.card-history {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 5px 0px #AAAAAA;
     margin: 10px;
-    /* text-align: center; */
-    /* align-content: center; */
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -225,119 +224,3 @@ div.card-history {
 
 
 /* ========== book3 ========== */
-#book3 {
-    background-color: #4E7AC7;
-}
-
-#book3 .wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-#book3 .title {
-    color: white;
-}
-.article-container {
-    display: flex;
-    flex-direction: column;
-    width : 100%;
-}
-
-.article {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    /* box-shadow: 0px 0px 5px 0px #AAAAAA; */
-    height: fit-content;
-}
-
-.article-img-container {
-    width: fit-content;
-    height: fit-content;
-}
-
-.article-img-container img {
-    width: 350px;
-    height: 215px;
-    object-fit: cover;
-}
-
-.article-desc-container {
-    width: 80%;
-    padding: 20px;
-}
-
-.article-desc-container .text-box{
-    height: 120px;
-}
-
-.article-desc-container button {
-    width: 150px;
-    float:right;
-    margin-top: 10px;
-}
-
-
-
-/* ========== book4 ========== */
-#book4 {
-    background-color: #16193B;
-}
-
-#book4 .wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-#book4 div.content{
-    display: flex;
-    flex-direction: row;
-}
-
-#book4 .title {
-    color: white;
-}
-
-.diary {
-    display: flex;
-    flex-direction: row;
-    
-    width: 80%;
-    height: 500px;
-    background-color: white;
-}
-
-.diary-pic {
-    width: fit-content;
-    height: fit-content;
-}
-
-.diary-pic img {
-    width: 400px;
-    height: 500px;
-    object-fit: cover;
-}
-
-.diary-text {
-    display: flex;
-    flex-direction: column;
-
-    padding: 20px;
-}
-
-.move-pointer {
-    width: fit-content;
-    height: 500px;
-    display: flex;
-    align-items: center;
-}
-
-.move-pointer img {
-    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(314deg) brightness(106%) contrast(104%);
-    width: 50px;
-    padding: 30px;
-}
-
-.move-pointer#to-left img{
-    transform: scaleX(-1);
-}
