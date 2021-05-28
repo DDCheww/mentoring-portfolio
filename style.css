@@ -90,6 +90,10 @@ div.navigation {
     
     display: flex;
     flex-direction: row;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 div.navigation button {
@@ -340,4 +344,42 @@ div.card-history {
 
 .move-pointer#to-left img{
     transform: scaleX(-1);
+}
+
+/* ============== contact ============ */
+#contact {
+    background-color: #d8e6fa;
+}
+#contact .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-self: center;
+}
+
+.contact-item {
+    padding: 100px 20px 100px 20px; /* up right down left */
+    width: 120px;
+}
+
+.contact-item img {
+    width: 90px;
+}
+
+.contact-item h6 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+    color: black;
+}
+
+.contact-item a {
+    text-decoration-line: none;
 }
