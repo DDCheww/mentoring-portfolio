@@ -99,10 +99,60 @@
           </div>
           <div class="article-desc-container">
             <div class="text-box">
-              <h2>title</h2>
-              <p>Description</p>
+              <h2 id="article-title1">
+                  <script>
+                  $(function(){
+                      $.get('article/article1.html', function(result){
+                          var obj = $(result).find('h1');
+                          document.getElementById("article-title1").innerText = obj.html()
+                      });
+                  });
+                </script>
+              </h2>
+              <p id="article-desc1" class="article-desc">
+                <script>
+                $(function(){
+                    $.get('article/article1.html', function(result){
+                        var obj = $(result).find('p');
+                        document.getElementById("article-desc1").innerText = obj.html().substr(0,550) + "..."  
+                    });
+                });
+              </script>
+              </p>
             </div>
-            <a href="/newpage.html?article1">
+            <a href="article/article1.html">
+              <button>자세히 보기</button>
+            </a>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-img-container">
+            <img src="img/temp.jpg" alt="article_pic">
+          </div>
+          <div class="article-desc-container">
+            <div class="text-box">
+              <h2 id="article-title2">
+                  <script>
+                  $(function(){
+                      $.get('article/article2.html', function(result){
+                          var obj = $(result).find('h1');
+                          document.getElementById("article-title2").innerText = obj.html()
+                      });
+                  });
+                </script>
+              </h2>
+              <p id="article-desc2" class="article-desc">
+                <script>
+                $(function(){
+                    $.get('article/article2.html', function(result){
+                        var obj = $(result).find('p');
+                        document.getElementById("article-desc2").innerText = obj.html().substr(0,550) + "..."  
+                    });
+                });
+              </script>
+              </p>
+            </div>
+            <a href="article/article2.html">
               <button>자세히 보기</button>
             </a>
           </div>
